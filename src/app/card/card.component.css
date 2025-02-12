@@ -1,0 +1,41 @@
+div.top-menu{
+  background-color: darkblue;
+  height: 50px;
+  color: white;
+  padding: 1rem;
+  margin-bottom:20px ;
+}
+
+div.about-us-card{
+ height: 400px;
+  background-image: url(../../../public/assets/planifica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  filter: grayscale(75%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 10px;
+}
+
+div.about-title{
+  backdrop-filter: blur(5px);
+  height: 75%;
+  margin-bottom: 10px;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+button{
+  background: #3498db;
+  font-weight: 100;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #8ac1e5;
+  transition: linear .2s;
+}

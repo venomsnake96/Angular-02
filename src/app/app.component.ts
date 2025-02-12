@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CardComponent } from './card/card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  imports: [CardComponent],
+  template: `<app-card [title]="data.title" [header]="info.title" [info]="text.contenido">`,
   styleUrl: './app.component.css'
 })
 export class AppComponent {
@@ -12,11 +13,15 @@ export class AppComponent {
     title: 'OlympusSport'
   };
 
-  onButtonClicked(){
-    alert('Hello from Angular')
+  info = {
+    title: 'El deporte, una forma de vivir'
   }
 
-  onKeyUp(newTitle: string){
-    this.data.title =newTitle
+  text = {
+    contenido: 'mas alla del deporte como disciplina. La actividad fisica constante es sinonimo de bienestar y calidad de vida'
   }
+
+
+
+
 }

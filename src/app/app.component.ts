@@ -8,5 +8,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'OlympusSport';
+  data = {
+    title: 'OlympusSport'
+  };
+
+  onButtonClicked(){
+    alert('Hello from Angular')
+  }
+
+  onKeyUp(newTitle: string){
+    this.data.title =newTitle
+  }
 }

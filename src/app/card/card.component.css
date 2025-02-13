@@ -1,35 +1,68 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  height: 500px;
+}
 
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
 
-div.about-us-card{
- height: 400px;
-  background-image: url(../../../public/assets/planifica.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px;
-  filter: grayscale(75%);
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  border-radius: 10px;
 }
 
-div.about-title{
-  backdrop-filter: blur(5px);
-  height: 75%;
-  margin-bottom: 10px;
-  padding: .5rem;
-  border-radius: 10px;
+.slide.active {
+  display: block;
 }
 
-button{
-  background: #3498db;
-  font-weight: 100;
+.slide img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(50%);
+}
+
+.carousel-caption {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  color: black;
   padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 50%;
 }
 
-button:hover{
-  background: #8ac1e5;
-  transition: linear .2s;
+.carousel-control.prev {
+  left: 10px;
 }
+
+.carousel-control.next {
+  right: 10px;
+}
+
+

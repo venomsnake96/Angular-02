@@ -4,7 +4,7 @@ import { CardComponent } from './card/card.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CardComponent],
+  imports: [CardComponent, RouterOutlet],
   templateUrl:'./app.component.html',
   styleUrl: './app.component.css'
 })

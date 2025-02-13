@@ -5,7 +5,8 @@ import { CardComponent } from './card/card.component';
 @Component({
   selector: 'app-root',
   imports: [CardComponent],
-  template: `<app-card [title]="data.title" [header]="info.title" [info]="text.contenido">`,
+  templateUrl:'./app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   data = {

@@ -1,18 +1,8 @@
-input.demo{
-  border: 2px solid black;
-  padding-left: 10px;
-  border-radius: 20px;
-  width: 300px;
-  height: 30px;
-  font-size: 25px;
-  color: white;
-  background-color: black ;
+*{
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
 }
 
-button.btn{
-  border: none;
-  background-color: greenyellow;
-  width: 200px;
-  height: 30px;
-  }
+
 

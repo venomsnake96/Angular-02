@@ -10,15 +10,12 @@ function toCapitalize (text:string): string{
 @Component({
   selector: 'app-card',
   imports: [],
-  templateUrl: './card.component.html',
+  templateUrl:'./card.component.html' ,
   styleUrl:'./card.component.css'
 })
 
 export class CardComponent{
-  name = input.required<string, string>({
-    alias: 'title',
-    transform: toCapitalize,
-  })
+  
 
   header = input.required<string, string>({
     transform: toCapitalize,
@@ -31,6 +28,7 @@ export class CardComponent{
   onClicked(){
     alert('Hello Motherfucker')
   }
+
 
 
 }

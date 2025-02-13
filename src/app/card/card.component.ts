@@ -28,5 +28,9 @@ export class CardComponent{
     transform: toCapitalize,
   })
 
+  onClicked(){
+    alert('Hello Motherfucker')
+  }
+
 
 }

@@ -1,7 +1,14 @@
 *{
   margin: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: white;
+}
+
+div.top-menu{
+  background-color: darkblue;
+  height: 50px;
+  padding: 1rem;
+  margin-bottom:20px ;
+  color: white;
 }
 
 

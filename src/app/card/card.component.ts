@@ -17,16 +17,16 @@ export class CardComponent{
   carouselItems: CarouselItem[] = [
     {
       image: '../..//public/assets/planifica.jpg',
-      title: 'Entrenamiento Personalizado',
-      description: 'Programas diseñados para alcanzar tus metas físicas.'
+      title: 'El deporte en la vida diaria',
+      description: 'Mas alla de la practica del deporte como hobbie, pasa tiempo o disciplina. Este debe ser considerado en la vida diaria, pues una acvidad fisica cosntante trae bienstar y calidad de vida'
     },
     {
-      image: 'https://via.placeholder.com/800x400?text=Deporte+2',
-      title: 'Yoga y Meditación',
+      image: '../..//public/assets/karete.jpg',
+      title: 'El deporte como disciplina',
       description: 'Equilibrio entre cuerpo y mente para una vida saludable.'
     },
     {
-      image: 'https://via.placeholder.com/800x400?text=Deporte+3',
+      image: '../..//public/assets/BROWN.jpg',
       title: 'Nutrición Deportiva',
       description: 'Alimentación adecuada para maximizar tu rendimiento.'
     }

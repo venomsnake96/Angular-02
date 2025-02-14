@@ -1,15 +1,17 @@
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 750px;
   margin: auto;
   overflow: hidden;
   height: 500px;
-}
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
 
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
+
 
 }
 
@@ -18,7 +20,6 @@
   box-sizing: border-box;
   position: relative;
   display: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .slide.active {
@@ -27,8 +28,8 @@
 
 .slide img {
   width: 100%;
-  height: auto;
-  filter: grayscale(50%);
+  height: 500px;
+  filter: grayscale(75%);
 }
 
 .carousel-caption {

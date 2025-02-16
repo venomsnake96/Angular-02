@@ -29,22 +29,30 @@
 .slide img {
   width: 100%;
   height: 500px;
-  filter: grayscale(75%);
+  filter: grayscale(85%);
 }
 
 .carousel-caption {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   position: absolute;
-  top: 7%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  backdrop-filter: blur(20px);
-  color: black;
+  backdrop-filter: blur(30px);
   padding: 10px 20px;
   border-radius: 20px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.carousel-caption h2{
+  color: blue;
+}
+
+.carousel-caption p{
+  color:white;
+  font-weight: 500;
 }
 
 .carousel-control {

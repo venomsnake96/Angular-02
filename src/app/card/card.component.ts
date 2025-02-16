@@ -17,17 +17,17 @@ export class CardComponent{
   carouselItems: CarouselItem[] = [
     {
       image: '../..//public/assets/planifica.jpg',
-      title: 'El deporte en la vida diaria',
+      title: 'EL DEPORTE EN LA VIDA DIARIA',
       description: 'Mas alla de la practica del deporte como hobbie o disciplina, este debe ser considerado en la vida diaria, es una actividad que tiene un impacto significativo en las personas, proporcionando beneficios tanto fisicos como mentales. - El deporte forma a las personas para la vida, fomenta la competencia con uno mismo y el trabajo en equipo, asi como la voluntad de resolver retos y problemas - '
     },
     {
       image: '../..//public/assets/karete.jpg',
-      title: 'El deporte como disciplina',
+      title: 'EL DEPORTE COMO DISCIPLINA',
       description: 'Equilibrio entre cuerpo y mente para una vida saludable.'
     },
     {
       image: '../..//public/assets/BROWN.jpg',
-      title: 'Nutrición Deportiva',
+      title: 'NUTRICION DEPORTIVA',
       description: 'Alimentación adecuada para maximizar tu rendimiento.'
     }
   ];

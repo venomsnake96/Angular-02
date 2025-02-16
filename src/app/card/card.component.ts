@@ -22,13 +22,13 @@ export class CardComponent{
     },
     {
       image: '../..//public/assets/karete.jpg',
-      title: 'EL DEPORTE COMO DISCIPLINA',
-      description: 'Equilibrio entre cuerpo y mente para una vida saludable.'
+      title: 'DISCIPLINA EN EL DEPORTE',
+      description: 'Debido a su naturaleza estructurada y reglamentada que promueve valores como la disciplina, la perseverancia y la colaboracion. En el ambito deportivo, la disciplina se refiere al nivel de compromiso, respeto y evolución que presenta un atleta en sunrespectivo deporte.'
     },
     {
       image: '../..//public/assets/BROWN.jpg',
       title: 'NUTRICION DEPORTIVA',
-      description: 'Alimentación adecuada para maximizar tu rendimiento.'
+      description: 'Una dieta adecuada proporciona los nutrientes necesarios para mantener y reparar los tejidos, especialmente los musculares, y asegura una hidratación adecuada. Una alimentació equilibrada y adaptada a las necesidades individuales del deportista en escencial para el rendimiento y la recuperación optima'
     }
   ];
 

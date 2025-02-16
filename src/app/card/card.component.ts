@@ -18,7 +18,7 @@ export class CardComponent{
     {
       image: '../..//public/assets/planifica.jpg',
       title: 'El deporte en la vida diaria',
-      description: 'Mas alla de la practica del deporte como hobbie, pasa tiempo o disciplina. Este debe ser considerado en la vida diaria, pues una acvidad fisica cosntante trae bienstar y calidad de vida'
+      description: 'Mas alla de la practica del deporte como hobbie o disciplina, este debe ser considerado en la vida diaria, es una actividad que tiene un impacto significativo en las personas, proporcionando beneficios tanto fisicos como mentales. - El deporte forma a las personas para la vida, fomenta la competencia con uno mismo y el trabajo en equipo, asi como la voluntad de resolver retos y problemas - '
     },
     {
       image: '../..//public/assets/karete.jpg',

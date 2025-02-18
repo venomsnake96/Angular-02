@@ -1,0 +1,35 @@
+.about{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.about-top{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: aliceblue;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding: 0 15px;
+}
+
+
+.about-top-title{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.about-top-title h1{
+  font-size: 40px;
+  color: white;
+  letter-spacing: 3px;
+  
+}
+
+.about-top-title img{
+  width: 350px;
+  margin-top: -70px;
+  margin-bottom: -10px;
+}

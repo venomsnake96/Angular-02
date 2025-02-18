@@ -1,6 +1,4 @@
 .top-menu{
-  background: rgb(2,0,36);
-  color: white;
   min-height: 100px;
   display: flex;
   flex-direction: row;

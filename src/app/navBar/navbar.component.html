@@ -3,10 +3,10 @@
     <img [src]='item.logo' alt="logo">
   </div>
   <ul class="navbar-links" [class.active]="isMenuOpen">
-    <li><a class="active" href="/inicio">Deporte</a></li>
-    <li><a routerLink="/about">Nosotros</a></li>
-    <li><a href="/servicios">Servicios</a></li>
-    <li><a href="/contacto">Contacto</a></li>
+    <li><a routerLink="/" routerLinkActive="active">Deporte</a></li>
+    <li><a routerLink="/about" routerLinkActive="active">Nosotros</a></li>
+    <li><a routerLink="/service" routerLinkActive="active">Servicios</a></li>
+    <li><a routerLink="/contact" routerLink="active">Contacto</a></li>
   </ul>
   <button class="navbar-toggle" (click)="toggleMenu()">
     <span class="icon-bar"></span>

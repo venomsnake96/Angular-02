@@ -65,6 +65,11 @@
     margin-top: -40px;
   }
 
+  .navbar-links a.active{
+    color: blue;
+    font-weight: 700;
+  }
+
 
   @media (max-width: 600px) {
 

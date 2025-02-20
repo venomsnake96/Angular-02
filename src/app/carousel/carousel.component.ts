@@ -9,11 +9,11 @@ export interface CarouselItem {
 
 @Component({
   selector: 'app-card',
-  templateUrl:'./card.component.html' ,
-  styleUrl:'./card.component.css'
+  templateUrl:'./carousel.component.html' ,
+  styleUrl:'./carousel.component.css'
 })
 
-export class CardComponent{
+export class CarouselComponent{
   carouselItems: CarouselItem[] = [
     {
       image: '../..//public/assets/planifica.jpg',

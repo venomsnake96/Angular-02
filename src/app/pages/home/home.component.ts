@@ -9,4 +9,14 @@ import { CarouselComponent } from "../../carousel/carousel.component";
   templateUrl: './home.component.html',
   styleUrl:'./home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  tileText = 'DEPORTE';
+  isSpanish = true;
+
+  constructor(){
+   setInterval(() => {
+     this.isSpanish = !this.isSpanish;
+     this.tileText = this.isSpanish ? 'DEPORTE' : 'αθλητισμός';
+   },2000)
+  }
+}

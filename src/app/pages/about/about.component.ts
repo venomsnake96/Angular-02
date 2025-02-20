@@ -16,7 +16,7 @@ export class AboutComponent{
  constructor(){
   setInterval(() => {
     this.isSpanish = !this.isSpanish;
-    this.tileText = this.isSpanish ? 'BIENVENIDO' : 'ΚΑΛΩΣ ΗΡΘΑΤΕ';
+    this.tileText = this.isSpanish ? 'BIENVENIDOs' : 'ΚΑΛΩΣ ΗΡΘΑΤΕ';
   },2000)
  }
 }

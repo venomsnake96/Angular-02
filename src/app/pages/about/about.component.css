@@ -25,7 +25,7 @@ padding: 10px 100px;
 
 .about-top-title img{
   margin-top: -85px;
-  width: 550px;
+  max-width: 550px;
 }
 
 .about-top p{

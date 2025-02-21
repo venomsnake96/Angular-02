@@ -8,4 +8,14 @@ import { Component } from "@angular/core";
   templateUrl:'./servic.component.html',
   styleUrl:'./servic.component.css'
 })
-export class ServiceComponent{}
+export class ServiceComponent{
+  tileText = 'ACTIVIDADES';
+  isSpanish = true;
+
+  constructor(){
+   setInterval(() => {
+     this.isSpanish = !this.isSpanish;
+     this.tileText = this.isSpanish ? 'ACTIVIDADES' : 'ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ';
+   },2000)
+  }
+}

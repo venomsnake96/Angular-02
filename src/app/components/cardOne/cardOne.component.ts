@@ -9,8 +9,8 @@ export interface CarouselItem {
 
 @Component({
   selector: 'app-card',
-  templateUrl:'./carousel.component.html' ,
-  styleUrl:'./carousel.component.css'
+  templateUrl:'./cardOne.component.html' ,
+  styleUrl:'./cardOne.component.css'
 })
 
 export class CarouselComponent{

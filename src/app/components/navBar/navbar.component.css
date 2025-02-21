@@ -57,7 +57,7 @@
     height: 70px;
     max-width: 100%;
     padding: 0;
-    background-image: url('../../../public/assets/griego.png');
+    background-image: url('../../../../public/assets/griego.png');
     background-position: center;
     background-size: contain;
     background-repeat: repeat;

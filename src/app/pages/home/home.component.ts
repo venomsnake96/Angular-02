@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { CarouselComponent } from "../../carousel/carousel.component";
+import { CarouselComponent } from "../../components/cardOne/cardOne.component";
 
 @Component({
   selector:'app-home',

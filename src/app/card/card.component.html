@@ -1,0 +1,10 @@
+<div class="card-box">
+  @for(item of cardItems; track item; let i = $index){
+  <div class="card">
+    <img [src]="item.image" [alt]="item.title">
+    <div class="card-content">
+      <h2 class="card-title">{{item.title}}</h2>
+      <p>{{item.description}}</p>
+    </div>
+  </div>}
+</div>

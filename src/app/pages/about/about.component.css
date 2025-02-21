@@ -32,3 +32,10 @@ padding: 10px 100px;
 color:white;
 font-family: 500px;
 }
+
+.card-box{
+  display: flex;flex-wrap: wrap;
+  max-width: 100%;
+  gap: .5rem;
+  justify-content: center;
+}

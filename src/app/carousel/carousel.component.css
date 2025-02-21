@@ -27,7 +27,7 @@
 }
 
 .slide img {
-  width: 100%;
+  width: 800px;
   height: 500px;
   filter: grayscale(85%);
 }
@@ -39,7 +39,7 @@
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(10px);
   padding: 10px 20px;
   border-radius: 20px;
   text-align: center;
@@ -51,7 +51,7 @@
 }
 
 .carousel-caption p{
-  color:black;
+  color: white;
   font-weight: 500;
 }
 
@@ -59,6 +59,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: transform linear;
   background-color: transparent;
   color: white;
   border: none;

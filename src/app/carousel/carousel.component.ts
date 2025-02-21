@@ -21,7 +21,7 @@ export class CarouselComponent{
       description: 'Mas alla de la practica del deporte como hobbie o disciplina, este debe ser considerado en la vida diaria, es una actividad que tiene un impacto significativo en las personas, proporcionando beneficios tanto fisicos como mentales. - El deporte forma a las personas para la vida, fomenta la competencia con uno mismo y el trabajo en equipo, asi como la voluntad de resolver retos y problemas - '
     },
     {
-      image: '../..//public/assets/karete.jpg',
+      image: '../..//public/assets/olympusjump.JPG',
       title: 'DISCIPLINA EN EL DEPORTE',
       description: 'Debido a su naturaleza estructurada y reglamentada que promueve valores como la disciplina, la perseverancia y la colaboracion. En el ambito deportivo, la disciplina se refiere al nivel de compromiso, respeto y evolución que presenta un atleta en sunrespectivo deporte.'
     },

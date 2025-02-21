@@ -16,7 +16,7 @@ export class HomeComponent {
   constructor(){
    setInterval(() => {
      this.isSpanish = !this.isSpanish;
-     this.tileText = this.isSpanish ? 'DEPORTE' : 'αθλητισμός';
+     this.tileText = this.isSpanish ? 'DEPORTE' : 'ΑΘΛΗΤΙΣΜΟΣ';
    },2000)
   }
 }

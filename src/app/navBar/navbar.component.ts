@@ -16,10 +16,6 @@ export class NavbarComponent{
     logo: '../..//public/assets/olympusLogo.png'
   };
 
-  base = {
-    geek: '../..//public/assets/griego.png'
-  }
-
   isMenuOpen = false;
 
   toggleMenu(){

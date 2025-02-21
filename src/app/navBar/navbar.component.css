@@ -82,22 +82,21 @@
     }
 
     .navbar-links {
-      display: none;
+      display: flex;
       flex-direction: column;
-      width: 150px;
-      height: 175px;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
       background: rgb(1, 1, 32) ;
-      border: 1px solid rgb(16, 99, 243);
-      border-radius: 25px;
       z-index: 1000;
       position: absolute;
-      right: 70px;
-      top: 10px;
-      transition: ease-in-out .2s;
+      left: 0;
+      top: 100px;
+      transition: max-height 0.5s ease-in-out;
     }
 
     .navbar-links.active {
-      display: flex;
+      max-height: 300px;
     }
 
     .navbar-links li {

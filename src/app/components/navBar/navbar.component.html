@@ -2,12 +2,51 @@
   <div class="top-menu-logo">
     <img [src]='item.logo' alt="logo">
   </div>
-  <ul class="navbar-links" [class.active]="isMenuOpen">
-    <li><a routerLink="/" routerLinkActive="active">Deporte</a></li>
-    <li><a routerLink="/about" routerLinkActive="active">Nosotros</a></li>
-    <li><a routerLink="/service" routerLinkActive="active">Servicios</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
-  </ul>
+  <div class="navbar-links" [class.active]="isMenuOpen">
+    <ul class="nav-links-one">
+      <li><a routerLink="/" routerLinkActive="active">Deporte</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">Nosotros</a></li>
+      <li><a routerLink="/service" routerLinkActive="active">Servicios</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+    </ul>
+    <ul class="nav-links-two">
+
+      <li (mouseenter)="openDropdown(0)" (mouseleave)="closeDropdown(0)">
+        <a routerLink="" routerLinkActive="active">Gimnasia</a>
+        <div class="dropdown" *ngIf="isDropdownOpen[0]">
+          <p>Gimnasia Femenil</p>
+          <p>Gimnasia Varonil</p>
+        </div>
+      </li>
+
+      <li (mouseenter)="openDropdown(1)" (mouseleave)="closeDropdown(1)">
+        <a routerLink="" routerLinkActive="active">Porra</a>
+      <div class="dropdown" *ngIf="isDropdownOpen[1]">
+        <p>Mixto nivel 7</p>
+        <p>Femenil nivel 7</p>
+        <p>Prepa y Universidad Mixto Avanzado</p>
+      </div>
+      </li>
+
+      <li (mouseenter)="openDropdown(2)" (mouseleave)="closeDropdown(2)">
+        <a routerLink="" routerLinkActive="active">Telas</a>
+      <div class="dropdown" *ngIf="isDropdownOpen[2]">
+        <p>Gimnasia Aerea</p>
+      </div>
+      </li>
+
+      <li (mouseenter)="openDropdown(3)" (mouseleave)="closeDropdown(3)">
+        <a routerLink="" routerLinkActive="active">Programas de Entrenamiento</a>
+        <div class="dropdown" *ngIf="isDropdownOpen[3]">
+          <p>No competitivo</p>
+          <p>Competitivo Local</p>
+          <p>Competitivo Internacional</p>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
   <button class="navbar-toggle" (click)="toggleMenu()">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>

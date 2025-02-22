@@ -17,6 +17,15 @@ export class NavbarComponent{
   };
 
   isMenuOpen = false;
+  isDropdownOpen: boolean[] = [false, false, false, false]
+
+  openDropdown(index: number){
+    this.isDropdownOpen[index] = true
+  }
+
+  closeDropdown(index: number) {
+    this.isDropdownOpen[index] = false
+  }
 
   toggleMenu(){
     this.isMenuOpen = !this.isMenuOpen;

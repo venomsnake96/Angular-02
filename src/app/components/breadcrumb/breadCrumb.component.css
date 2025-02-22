@@ -1,0 +1,25 @@
+.breadcrumb{
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.breadcrumb-item{
+  display: inline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+  content: '/';
+  padding: 0 8px;
+  color: #5c757d;
+}
+
+.breadcrumb-item a{
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+  text-decoration: underline;
+}

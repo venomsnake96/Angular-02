@@ -9,14 +9,14 @@ import { Breadcrumb } from './breadCrumb.model';
 })
 export class BreadcrumbService {
   private breadcrumbsSubject = new BehaviorSubject<Breadcrumb[]>([]);
-  breadcrumbs$ = this.breadcrumbsSubject.asObservable(); // Expone el Observable
+  breadcrumbs$ = this.breadcrumbsSubject.asObservable();
 
   constructor(private router: Router) {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         const breadcrumbs = this.createBreadcrumbs(this.router.routerState.snapshot.root);
-        this.breadcrumbsSubject.next(breadcrumbs); // Emite los nuevos breadcrumbs
+        this.breadcrumbsSubject.next(breadcrumbs);
       });
   }
 

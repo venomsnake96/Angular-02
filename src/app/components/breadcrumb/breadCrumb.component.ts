@@ -13,11 +13,11 @@ import { Breadcrumb } from './breadCrumb.model';
 })
 
 export class BreadcrumbComponent {
-breadcrumbs: Breadcrumb[] = [];
+  breadcrumbs: Breadcrumb[] = [];
 
-constructor(private breadcrumbService: BreadcrumbService){
-  this.breadcrumbService.breadcrumbs$.subscribe((breadcrumbs) =>{
-    this.breadcrumbs = breadcrumbs
-  });
-}
+  constructor(private breadcrumbService: BreadcrumbService) {
+    this.breadcrumbService.breadcrumbs$.subscribe((breadcrumbs) => {
+      this.breadcrumbs = breadcrumbs;
+    });
+  }
 }

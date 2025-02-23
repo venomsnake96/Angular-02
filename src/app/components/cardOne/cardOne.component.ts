@@ -29,45 +29,11 @@ export class CarouselComponent{
       image: '../..//public/assets/BROWN.jpg',
       title: 'NUTRICION DEPORTIVA',
       description: 'Una dieta adecuada proporciona los nutrientes necesarios para mantener y reparar los tejidos, especialmente los musculares, y asegura una hidratación adecuada. Una alimentació equilibrada y adaptada a las necesidades individuales del deportista en escencial para el rendimiento y la recuperación optima'
+    },
+    {
+      image:'',
+      title: 'DEPORTE PARA TODOS',
+      description:''
     }
   ];
-
-  currentIndex = 0;
-  private intervalId: any; // Para almacenar el ID del intervalo
-
-  ngOnInit() {
-    this.startAutoSlide();
-  }
-
-  ngOnDestroy() {
-    this.stopAutoSlide(); // Limpiar el intervalo cuando el componente se destruye
-  }
-
-  startAutoSlide() {
-    this.intervalId = setInterval(() => {
-      this.nextSlide();
-    }, 6000); // Cambia de slide cada 3 segundos (3000 ms)
-  }
-
-  stopAutoSlide() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId); // Detener el intervalo
-    }
-  }
-
-  nextSlide() {
-    this.currentIndex = (this.currentIndex + 1) % this.carouselItems.length;
-  }
-
-  prevSlide() {
-    this.currentIndex = (this.currentIndex - 1 + this.carouselItems.length) % this.carouselItems.length;
-  }
-
-  pauseAutoSlide() {
-    this.stopAutoSlide();
-  }
-
-  resumeAutoSlide() {
-    this.startAutoSlide();
-  }
 }

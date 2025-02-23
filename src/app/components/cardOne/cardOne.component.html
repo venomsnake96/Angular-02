@@ -1,15 +1,11 @@
-<div class="carousel" (mouseenter)="pauseAutoSlide()" (mouseleave)="resumeAutoSlide()">
-  <div class="carousel-inner">
-    @for (item of carouselItems; track item; let i = $index) {
-      <div class="slide" [class.active]="i === currentIndex">
-        <img [src]="item.image" [alt]="item.title" />
-        <div class="carousel-caption">
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.description }}</p>
-        </div>
-      </div>
-    }
-  </div>
-  <button class="carousel-control prev" (click)="prevSlide()">&#10094;</button>
-  <button class="carousel-control next" (click)="nextSlide()">&#10095;</button>
+<div class="card-box">
+  @for (item of carouselItems; track $index) {
+  <div class="card">
+    <img [src]="item.image" [alt]="item.title">
+    <div class="card-content">
+      <h2 class="card-title">{{item.title}}</h2>
+      <p>{{item.description}}</p>
+      <button class="call-btn">Saber mas</button>
+    </div>
+  </div>}
 </div>

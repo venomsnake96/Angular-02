@@ -4,12 +4,15 @@
   </div>
   <div class="navbar-links" [class.active]="isMenuOpen">
     <ul class="nav-links-one">
-      <li><a routerLink="/" routerLinkActive="active">Deporte</a></li>
+      <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
       <li><a routerLink="/about" routerLinkActive="active">Nosotros</a></li>
       <li><a routerLink="/service" routerLinkActive="active">Servicios</a></li>
       <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+      <button class="toggle-nav-links-two" (click)="toggleNavlinksTwo()">
+
+      </button>
     </ul>
-    <ul class="nav-links-two">
+    <ul class="nav-links-two" [class.visible]="isNavLinksTwoVisible">
 
       <li (mouseenter)="openDropdown(0)" (mouseleave)="closeDropdown(0)">
         <a routerLink="" routerLinkActive="active">Gimnasia</a>
@@ -36,7 +39,7 @@
       </li>
 
       <li (mouseenter)="openDropdown(3)" (mouseleave)="closeDropdown(3)">
-        <a routerLink="" routerLinkActive="active">Programas de Entrenamiento</a>
+        <a routerLink="" routerLinkActive="active">Programas de <br>Entrenamiento</a>
         <div class="dropdown" *ngIf="isDropdownOpen[3]">
           <p>No competitivo</p>
           <p>Competitivo Local</p>
@@ -44,9 +47,7 @@
         </div>
       </li>
     </ul>
-
   </div>
-
   <button class="navbar-toggle" [class.active]="isMenuOpen" (click)="toggleMenu()">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>

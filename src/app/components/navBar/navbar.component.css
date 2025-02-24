@@ -54,6 +54,8 @@
     align-items: center;
   }
 
+
+
   .nav-links-one,
   .nav-links-two {
     list-style: none;
@@ -88,22 +90,18 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: rgb(29, 79, 230);
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     min-width: 200px;
+    color: white;
   }
 
   .nav-links-two .dropdown p{
     margin: 5px 0;
 
   }
-
-
-
-
 
   .nav-links-one a{
     text-decoration: none;
@@ -131,8 +129,39 @@
     color: blue;
   }
 
+  .toggle-nav-links-two{
+    width: 25px;
+    height: 25px;
+    background:url('../../../../public/assets/flecha.png');
+    background-size: cover;
+    border: none;
+    font-size: 2px;
+  }
+
+  .toggle-nav-links-two:hover{
+    scale: 1.2;
+    transition: scale .1s ease-in-out;
+  }
 
 
+@media (min-width: 768px){
+  .nav-links-two{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+
+  .nav-links-two.visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar-toggle{
+    display: none;
+  }
+}
 
   @media (max-width: 768px) {
 
@@ -144,7 +173,9 @@
       display: flex;
     }
 
-
+.toggle-nav-links-two{
+  display: none;
+}
 
 
     .nav-links-one{
@@ -158,20 +189,20 @@
     .navbar-links {
       display: flex;
       flex-direction: column;
-      width: 50%;
+      width: 100%;
       max-height: 0;
       overflow: hidden;
       background: rgb(1, 1, 32) ;
       z-index: 1000;
       position: absolute;
-      left: 50%;
+      left: 0;
       top: 0;
       transform: translateY(118px);
       transition: max-height  0.5s ease-in-out;
     }
 
     .navbar-links.active {
-      max-height: 500px;
+      max-height: 100%;
     }
 
     .navbar-links li {
@@ -182,6 +213,16 @@
     .navbar-links a:hover{
     color: rgb(16, 99, 243);
     text-decoration: underline;
+  }
+
+  .nav-links-two .dropdown{
+    position: absolute;
+    top: -60px;
+    left: 100%;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 200px;
+    transition: all ease-in-out;
   }
   }
 

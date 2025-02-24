@@ -18,6 +18,11 @@ export class NavbarComponent{
 
   isMenuOpen = false;
   isDropdownOpen: boolean[] = [false, false, false, false]
+  isNavLinksTwoVisible = false
+
+  toggleNavlinksTwo(){
+    this.isNavLinksTwoVisible = !this.isNavLinksTwoVisible
+  }
 
   openDropdown(index: number){
     this.isDropdownOpen[index] = true

@@ -7,7 +7,7 @@ import { ServiceComponent } from './app/pages/servic/servic.component';
 import { HomeComponent } from './app/pages/home/home.component';
 
 const routes: Routes = [
-  {path: '',title:'Deportes', component: HomeComponent},
+  {path: '',title:'Inicio', component: HomeComponent},
   {path: 'about', title:'Nosotros', component:AboutComponent},
   {path: 'service', title:'Servicios', component: ServiceComponent},
   {path: '**', redirectTo: ''}

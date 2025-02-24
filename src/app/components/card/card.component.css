@@ -4,11 +4,10 @@
   color: hsl(0, 0%, 100%) ;
   width: 320px;
   height: 500px;
-  border-radius: 20px;
-  border: 1px solid blue;
   overflow: hidden;
   position: relative;
   transition: transform .5s ease;
+  box-shadow: rgba(75, 240, 46, 0.4) -5px 5px, rgba(82, 240, 46, 0.3) -10px 10px, rgba(88, 240, 46, 0.2) -15px 15px, rgba(46, 69, 240, 0.1) -20px 20px, rgba(46, 72, 240, 0.05) -25px 25px;
 }
 
 
@@ -16,7 +15,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
   filter: blur(4px) grayscale(100%);
   transition: filter .5s linear;
 }

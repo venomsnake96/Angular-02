@@ -1,0 +1,24 @@
+.service-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.service-top h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-family: 'Roboto', sans-serif;
+  transition: font-family 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  color: white;
+}
+
+.service-top h1.griego{
+  font-family: 'Georgia', sans-serif;
+}
+
+.service-top img{
+  max-width: 500px;
+  margin-top: -85px;
+}

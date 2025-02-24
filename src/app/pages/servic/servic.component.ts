@@ -1,10 +1,12 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
+import { GymnasticsComponent } from "./gimnasia/gimnasia.component";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector:'app-service',
   standalone:true,
-  imports:[CommonModule],
+  imports:[CommonModule, RouterModule, GymnasticsComponent],
   templateUrl:'./servic.component.html',
   styleUrl:'./servic.component.css'
 })

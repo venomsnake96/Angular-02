@@ -43,10 +43,45 @@ filter: blur(1px);
 }
 
 .call-btn{
-  background: unset;
-  color: #03fd10;
-  border: none;
-  padding: 5px;
-  font-family:fantasy;
-  font-size: 15px;
+  color:#22fc00;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 auto 2em;
+  max-width: 150px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
 }
+
+.call-btn svg{
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.call-btn rect{
+  fill: none;
+  stroke: none;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+}
+
+.call-btn:hover{
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #ffffff;
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    stroke: #22fc00;
+}
+}
+

@@ -4,15 +4,15 @@
     <img src="../../..//public/assets/hornamenta.png" alt="hornamenta">
   </div>
   <div class="service-content">
-    
+    @for (item of cardItems; track $index) {
     <div class="s-card">
-      <img src="" alt="">
+      <img [src]="item.image" [alt]="item.title">
       <div class="s-card-content">
-      <h2>Gimnasia</h2>
-      <p>El programa de gimnasia, desde principiante hasta experto
-          <button>Entrenar</button>
+      <h2>{{item.title}}</h2>
+      <p>{{item.description}}
+          <button class="btn-card" [routerLink]="item.route" >Ver mas</button>
         </p>
       </div>
-    </div>
+    </div>}
       </div>
 <router-outlet></router-outlet>

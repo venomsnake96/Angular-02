@@ -6,7 +6,7 @@
     <ul class="nav-links-one">
       <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
       <li><a routerLink="/about" routerLinkActive="active">Nosotros</a></li>
-      <li><a routerLink="/service" routerLinkActive="active">Servicios</a></li>
+      <li><a routerLink="/disciplinas" routerLinkActive="active">Disciplinas</a></li>
       <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
       <button class="toggle-nav-links-two" (click)="toggleNavlinksTwo()">
 
@@ -15,7 +15,7 @@
     <ul class="nav-links-two" [class.visible]="isNavLinksTwoVisible">
 
       <li (mouseenter)="openDropdown(0)" (mouseleave)="closeDropdown(0)">
-        <a routerLink="/service/gimnasia" routerLinkActive="active">Gimnasia</a>
+        <a routerLink="/disicplinas/gimnasia" routerLinkActive="active">Gimnasia</a>
         <div class="dropdown" *ngIf="isDropdownOpen[0]">
           <p>Gimnasia Femenil</p>
           <p>Gimnasia Varonil</p>
@@ -23,7 +23,7 @@
       </li>
 
       <li (mouseenter)="openDropdown(1)" (mouseleave)="closeDropdown(1)">
-        <a routerLink="/service/porra" routerLinkActive="active">Porra</a>
+        <a routerLink="/disciplinas/porra" routerLinkActive="active">Porra</a>
       <div class="dropdown" *ngIf="isDropdownOpen[1]">
         <p>Mixto nivel 7</p>
         <p>Femenil nivel 7</p>

@@ -10,13 +10,13 @@ export interface Carditem{
 }
 
 @Component({
-  selector:'app-service',
+  selector:'app-diciplinas',
   standalone:true,
   imports:[CommonModule, RouterModule],
-  templateUrl:'./servic.component.html',
-  styleUrl:'./servic.component.css'
+  templateUrl:'./disciplinas.component.html',
+  styleUrl:'./disciplinas.component.css'
 })
-export class ServiceComponent{
+export class DisciplinasComponent{
   tileText = 'ACTIVIDADES';
   isSpanish = true;
 
@@ -32,13 +32,13 @@ export class ServiceComponent{
       image:'../../..//public/assets/gimnasia.png',
       title:'Gimnasia',
       description:'Programa especializado en gimnasia aerobica y acrobatica, desde principiante hasta experto',
-      route: '/service/gimnasia'
+      route: '/disciplinas/gimnasia'
     },
     {
       image:'../../..//public/assets/olympusPorra.JPG',
       title: 'Porra',
       description:'De nuestoros principales programas, apto para todas las edades',
-      route: '/service/porra'
+      route: '/disciplinas/porra'
     },
     {
       image: '../../..//public/assets/telas.png',

@@ -2,6 +2,13 @@ import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { RouterModule } from "@angular/router";
 
+export interface Carditem{
+  image:string;
+  title:string;
+  description:string;
+  route: string;
+}
+
 @Component({
   selector:'app-service',
   standalone:true,
@@ -19,4 +26,32 @@ export class ServiceComponent{
      this.tileText = this.isSpanish ? 'ACTIVIDADES' : 'ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ';
    },2000)
   }
+
+  cardItems: Carditem[] = [
+    {
+      image:'',
+      title:'Gimnasia',
+      description:'Programa especializado en gimnasia aerobica y acrobatica, desde principiante hasta experto',
+      route: '/service/gimnasia'
+    },
+    {
+      image:'',
+      title: 'Porra',
+      description:'De nuestoros principales programas, apto para todas las edades',
+      route: '/service/porra'
+    },
+    {
+      image: '',
+      title: 'Telas',
+      description: '',
+      route: ''
+    },
+    {
+      image: '',
+      title: 'Competencias',
+      description:'Contamos con programas de competencias locales e internacionales',
+      route: ''
+    }
+  ]
 }
+

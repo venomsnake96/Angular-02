@@ -8,8 +8,7 @@
       <li><a routerLink="/about" routerLinkActive="active">Nosotros</a></li>
       <li><a routerLink="/disciplinas" routerLinkActive="active">Disciplinas</a></li>
       <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
-      <button class="toggle-nav-links-two" (click)="toggleNavlinksTwo()">
-
+      <button class="toggle-nav-links-two" [class.visible]="isNavLinksTwoVisible" (click)="toggleNavlinksTwo()">
       </button>
     </ul>
     <ul class="nav-links-two" [class.visible]="isNavLinksTwoVisible">
@@ -32,14 +31,14 @@
       </li>
 
       <li (mouseenter)="openDropdown(2)" (mouseleave)="closeDropdown(2)">
-        <a routerLink="" routerLinkActive="active">Telas</a>
+        <a routerLink="/disciplinas/telas" routerLinkActive="active">Telas</a>
       <div class="dropdown" *ngIf="isDropdownOpen[2]">
         <p>Gimnasia Aerea</p>
       </div>
       </li>
 
       <li (mouseenter)="openDropdown(3)" (mouseleave)="closeDropdown(3)">
-        <a routerLink="" routerLinkActive="active">Programas de <br>Entrenamiento</a>
+        <a routerLink="/disciplinas/entrenamiento" routerLinkActive="active">Programas de <br>Entrenamiento</a>
         <div class="dropdown" *ngIf="isDropdownOpen[3]">
           <p>No competitivo</p>
           <p>Competitivo Local</p>

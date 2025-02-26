@@ -78,7 +78,6 @@
   .nav-links-two a{
     text-decoration: none;
     color: rgb(16, 99, 243);
-    font-weight: bold;
   }
 
   .nav-links-two a:hover,
@@ -136,11 +135,16 @@
     background-size: cover;
     border: none;
     font-size: 2px;
+    transition: rotate .3s ease-in-out;
   }
 
   .toggle-nav-links-two:hover{
     scale: 1.2;
     transition: scale .1s ease-in-out;
+  }
+
+  .toggle-nav-links-two.visible{
+    transform: rotate(180deg);
   }
 
 

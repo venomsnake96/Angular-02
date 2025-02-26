@@ -7,6 +7,8 @@ import { HomeComponent } from './app/pages/home/home.component';
 import { GymnasticsComponent } from './app/pages/disciplinas/gimnasia/gimnasia.component';
 import { PorraComponent } from './app/pages/disciplinas/porra/porra.component';
 import { DisciplinasComponent } from './app/pages/disciplinas/disciplinas.component';
+import { TelasComponent } from './app/pages/disciplinas/telas/telas.component';
+import { TrainigComponent } from './app/pages/disciplinas/entrenamiento/entrenamiento.component';
 
 const routes: Routes = [
   {path: '',title:'Inicio', component: HomeComponent},
@@ -14,7 +16,9 @@ const routes: Routes = [
   {path: 'disciplinas', title:'Disciplinas', component: DisciplinasComponent,
     children: [
       {path:'gimnasia', title: 'Gimnasia', component:GymnasticsComponent},
-      {path: 'porra', title: 'Porra', component: PorraComponent}
+      {path: 'porra', title: 'Porra', component: PorraComponent},
+      {path: 'telas', title: 'Telas', component: TelasComponent},
+      {path: 'entrenamiento', title:'Competencias', component:TrainigComponent}
     ]
   },
   {path: '**', redirectTo: ''}

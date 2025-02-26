@@ -8,6 +8,7 @@ background: linear-gradient(0deg, rgba(11,11,19,1) 16%, rgba(14,13,42,1) 47%, rg
   flex-direction: row;
   justify-content: space-between;
   color: rgb(4, 255, 50);
+  padding: 0 10px;
 }
 
 .footer-content img{

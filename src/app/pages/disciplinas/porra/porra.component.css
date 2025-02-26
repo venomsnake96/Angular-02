@@ -1,3 +1,6 @@
+.porra-main{
+}
+
 .porra{
   display: flex;
   flex-direction: column;
@@ -12,18 +15,23 @@
 
 .p-color-bg{
   flex: 1;
-  background-color: blue;
-  padding: 20px;
+  background: linear-gradient(324deg, rgba(238,203,218,1) 65%, rgba(148,187,233,1) 100%);
+  padding: 0;
   text-align: center;
-  display: grid;
-  grid-template-rows: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .porra-content{
   max-width: 50%;
   color: white;
-  border: 1px solid;
-
+  background-color: blue;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.porra-content h1{
+  font-size: 20px;
 }
 
 .porra-content p{
@@ -31,6 +39,7 @@
 }
 
 .mixto-7{
+  margin-top: 20px;
   max-width: 50%;
   color: white;
   border: 1px solid;
@@ -40,6 +49,8 @@
   font-size: 15px;
 }
 
+
+
 @media (min-width:768px){
   .porra{
     flex-direction: row;
@@ -48,6 +59,20 @@
   .p-img-bg,
   .p-color-bg{
     flex: 1;
-
   }
+
+  .porra-content{
+    padding: 50px;
+  }
+
+  .porra-content h1{
+    font-size: 50px;
+  }
+
+  .porra-content p{
+    font-size: 15px;
+  }
+
+
 }
+

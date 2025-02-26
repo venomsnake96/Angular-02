@@ -40,6 +40,6 @@ max-width: 100%;
   gap: 2rem;
   justify-content: center;
 background: linear-gradient(63deg, rgba(14,13,42,1) 32%, rgba(27,20,142,1) 32%, rgba(14,13,42,1) 70%, rgba(17,15,67,1) 70%);
-padding: 15px 0;
+padding: 15px 0 40px;
 box-shadow: rgba(142, 224, 141, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  display: flex;
 }

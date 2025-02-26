@@ -44,13 +44,13 @@ export class DisciplinasComponent{
       image: '../../..//public/assets/telas.png',
       title: 'Telas',
       description: 'Esta disciplina es adecuada para personas de diferentes edades y niveles de condición física',
-      route: ''
+      route: '/disciplinas/telas'
     },
     {
       image: '../../..//public/assets/cinICU.jpg',
       title: 'Competencias',
       description:'Contamos con programas de competencias locales e internacionales',
-      route: ''
+      route: '/disciplinas/entrenamiento'
     }
   ]
 }

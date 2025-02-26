@@ -1,0 +1,53 @@
+.porra{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.p-img-bg{
+  flex: 1;
+  background-image: url('../../../../../public/assets/olympusCheer.JPG');
+  background-size: cover;
+}
+
+.p-color-bg{
+  flex: 1;
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 2;
+}
+
+.porra-content{
+  max-width: 50%;
+  color: white;
+  border: 1px solid;
+
+}
+
+.porra-content p{
+  font-size: 12px;
+}
+
+.mixto-7{
+  max-width: 50%;
+  color: white;
+  border: 1px solid;
+}
+
+.mixto-7 p{
+  font-size: 15px;
+}
+
+@media (min-width:768px){
+  .porra{
+    flex-direction: row;
+  }
+
+  .p-img-bg,
+  .p-color-bg{
+    flex: 1;
+
+  }
+}

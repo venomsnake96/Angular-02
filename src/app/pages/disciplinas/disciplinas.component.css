@@ -41,7 +41,7 @@ box-shadow: rgba(142, 224, 141, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0
   overflow:hidden;
   box-shadow: rgba(237, 240, 46, 0.4) -5px 5px, rgba(224, 240, 46, 0.3) -10px 10px, #53ea2d33 -15px 15px, rgba(101, 240, 46, 0.1) -20px 20px, rgba(78, 240, 46, 0.05) -25px 25px;
   position: relative;
-  transition: transform .5s ease;
+  transition: transform .5s ease, box-shadow .3s linear;
 }
 
 .s-card img{
@@ -61,12 +61,16 @@ box-shadow: rgba(142, 224, 141, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0
   transition: transform .5s ease;
 }
 
+.s-card:hover{
+  box-shadow: rgba(46, 72, 240, 0.4) -5px 5px, rgba(46, 65, 240, 0.3) -10px 10px, #2d66ea33 -15px 15px, rgba(201, 240, 46, 0.1) -20px 20px, rgba(233, 240, 46, 0.05) -25px 25px;
+}
+
 .s-card:hover .s-card-content{
   transform: translateY(0);
 }
 
 .s-card:hover img{
-  filter: blur(0);
+  filter: blur(0)
 }
 
 

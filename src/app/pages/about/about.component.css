@@ -37,7 +37,7 @@ max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
 background: linear-gradient(63deg, rgba(14,13,42,1) 32%, rgba(27,20,142,1) 32%, rgba(14,13,42,1) 70%, rgba(17,15,67,1) 70%);
 padding: 15px 0;

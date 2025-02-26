@@ -7,7 +7,20 @@
   overflow: hidden;
   position: relative;
   transition: transform .5s ease;
-  box-shadow: rgba(75, 240, 46, 0.4) -5px 5px, rgba(82, 240, 46, 0.3) -10px 10px, rgba(88, 240, 46, 0.2) -15px 15px, rgba(46, 69, 240, 0.1) -20px 20px, rgba(46, 72, 240, 0.05) -25px 25px;
+  box-shadow: rgba(75, 240, 46, 0.4) -5px 5px, rgba(82, 240, 46, 0.3) -10px 10px, rgba(88, 240, 46, 0.2) -15px 15px, rgba(56, 240, 46, 0.1) -20px 20px, rgba(49, 240, 46, 0.05) -25px 25px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: rgba(75, 240, 46, 0.4) -5px 5px, rgba(82, 240, 46, 0.3) -10px 10px, rgba(88, 240, 46, 0.2) -15px 15px, rgba(62, 240, 46, 0.1) -20px 20px, rgba(69, 240, 46, 0.05) -25px 25px;
+  }
+  50% {
+    box-shadow: rgba(46, 101, 240, 0.6) -5px 5px, rgba(46, 88, 240, 0.5) -10px 10px, rgba(46, 69, 240, 0.4) -15px 15px, rgba(46, 69, 240, 0.3) -20px 20px, rgba(46, 72, 240, 0.2) -25px 25px;
+  }
+  100% {
+    box-shadow: rgba(75, 240, 46, 0.4) -5px 5px, rgba(82, 240, 46, 0.3) -10px 10px, rgba(88, 240, 46, 0.2) -15px 15px, rgba(59, 240, 46, 0.1) -20px 20px, rgba(59, 240, 46, 0.05) -25px 25px;
+  }
 }
 
 
@@ -36,9 +49,7 @@
   transition: transform .5s ease;
 }
 
-.card-content ul{
-  list-style: none;
-}
+
 
 .card-title{
   position: relative;
@@ -68,6 +79,6 @@
  }
 
  .card-content p{
-  padding: .5px;
+  padding: 0 20px;
   font-size: 17px;
  }

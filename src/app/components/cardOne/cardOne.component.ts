@@ -31,9 +31,9 @@ export class CarouselComponent{
       description: 'Una dieta adecuada proporciona los nutrientes necesarios para mantener y reparar los tejidos, especialmente los musculares, y asegura una hidratación adecuada. Una alimentació equilibrada y adaptada a las necesidades individuales del deportista en escencial para el rendimiento y la recuperación optima'
     },
     {
-      image:'',
+      image:'../../..//public/assets/sportsForAll.png',
       title: 'DEPORTE PARA TODOS',
-      description:''
+      description:'El deporte ademas de una disciplina o un hobbie, tambien es una herramienta de gran utilidad en el campo de la rehabilitacion fisica y el desarrollo de las habilidades tanto fisicas como mentales en personas con capacidades diferentes.'
     }
   ];
 }

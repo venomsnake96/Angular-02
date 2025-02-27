@@ -9,5 +9,7 @@ import { Component } from "@angular/core";
   styleUrl: './gimnasia.componet.css'
 })
 export class GymnasticsComponent {
-  
+  title = 'Gimnasia'
+  description = ''
+  contexto = ''
 }

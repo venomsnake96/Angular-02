@@ -16,7 +16,7 @@
 .p-color-bg{
   flex: 1;
   background: linear-gradient(324deg, rgba(238,203,218,1) 65%, rgba(148,187,233,1) 100%);
-  padding: 0;
+  padding: 5px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -24,10 +24,10 @@
 }
 
 .porra-content{
-  max-width: 50%;
+  max-width: 80%;
   color: white;
   background-color: blue;
-  padding: 25px;
+  padding: 0px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 .porra-content h1{
@@ -62,7 +62,8 @@
   }
 
   .porra-content{
-    padding: 50px;
+    max-width: 50%;
+    padding: 0 40px;
   }
 
   .porra-content h1{

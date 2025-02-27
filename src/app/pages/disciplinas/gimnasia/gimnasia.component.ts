@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   standalone: true,
   imports: [CommonModule],
   templateUrl: './gimnasia.component.html',
-  styleUrl: './gimnasia.componet.css'
+  styleUrl: './gimnasia.component.css'
 })
 export class GymnasticsComponent {
   title = 'Gimnasia'

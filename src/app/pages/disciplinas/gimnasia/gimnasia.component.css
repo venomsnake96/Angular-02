@@ -1,22 +1,23 @@
-.porra-main{
+.gimnasia-main{
   background-color: rgb(0, 0, 129);
 }
 
-.porra{
+.gimnasia{
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-.p-img-bg{
+.g-img-bg{
   flex: 1;
-  background-image: url('../../../../../public/assets/olympusCheer.JPG');
+  background-image: url('../../../../../public/assets/gimnasiaBg.png');
   background-size: cover;
+  background-position: center;
 }
 
-.p-color-bg{
+.g-color-bg{
   flex: 1;
-  background: linear-gradient(324deg, rgba(238,203,218,1) 65%, rgba(148,187,233,1) 100%);
+  background: linear-gradient(63deg, rgba(194,255,164,1) 22%, rgba(168,252,252,1) 96%);
   padding: 5px;
   text-align: center;
   display: flex;
@@ -24,58 +25,43 @@
   align-items: center;
 }
 
-.porra-content{
+.gimnasia-content{
   max-width: 80%;
   color: white;
-  background-color: blue;
-  padding: 0px 10px;
+  background-color: rgb(47, 255, 68);
+  padding: 0 10px;
+  box-sizing:content-box ;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-  box-sizing: content-box;
 }
-.porra-content h1{
+
+.gimnasia-content h1{
   font-size: 20px;
 }
 
-.porra-content p{
+.gimnasia-content p{
   font-size: 12px;
 }
 
-.mixto-7{
-  margin-top: 20px;
-  max-width: 50%;
-  color: white;
-  border: 1px solid;
-}
-
-.mixto-7 p{
-  font-size: 15px;
-}
-
-
-
 @media (min-width:768px){
-  .porra{
+  .gimnasia{
     flex-direction: row;
   }
 
-  .p-img-bg,
-  .p-color-bg{
+  .g-img-bg,
+  .g-color-bg{
     flex: 1;
   }
 
-  .porra-content{
+  .gimnasia-content{
     max-width: 50%;
     padding: 0 40px;
   }
 
-  .porra-content h1{
+  .gimnasia-content h1{
     font-size: 50px;
   }
 
-  .porra-content p{
+  .gimnasia-content p{
     font-size: 15px;
   }
-
-
 }
-

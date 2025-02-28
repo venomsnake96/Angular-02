@@ -1,18 +1,2 @@
-<div class="service">
-  <div class="service-top">
-    <h1 [class.griego]="isSpanish">{{tileText}}</h1>
-    <img src="../../..//public/assets/hornamenta.png" alt="hornamenta">
-  </div>
-  <div class="service-content">
-    @for (item of cardItems; track $index) {
-    <div class="s-card">
-      <img [src]="item.image" [alt]="item.title">
-      <div class="s-card-content">
-      <h2>{{item.title}}</h2>
-      <p>{{item.description}}
-          <button class="btn-card" [routerLink]="item.route" >Ver mas</button>
-        </p>
-      </div>
-    </div>}
-      </div>
+
 <router-outlet></router-outlet>

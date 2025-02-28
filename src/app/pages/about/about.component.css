@@ -1,6 +1,5 @@
 .about{
 max-width: 100%;
-
 }
 
 .about-top{
@@ -15,7 +14,7 @@ max-width: 100%;
 
 
 .about-top-title h1{
- font-size: 3rem;
+ font-size: 1.2rem;
  font-weight: 700;
  letter-spacing: 5px;
  font-family: 'Roboto', sans-serif;
@@ -28,8 +27,8 @@ max-width: 100%;
 }
 
 .about-top-title img{
-  margin-top: -85px;
-  max-width: 550px;
+  margin-top: -40px;
+  max-width: 260px;
 }
 
 
@@ -43,3 +42,15 @@ background: linear-gradient(63deg, rgba(14,13,42,1) 32%, rgba(27,20,142,1) 32%, 
 padding: 15px 0 40px;
 box-shadow: rgba(142, 224, 141, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  display: flex;
 }
+
+@media (min-width:760px){
+  .about-top-title h1{
+    font-size: 3rem;
+  }
+
+  .about-top-title img{
+    margin-top: -85px;
+    max-width: 500px;
+  }
+}
+

@@ -2,7 +2,7 @@
 
 .card{
   color: hsl(0, 0%, 100%) ;
-  width: 320px;
+  width: 300px;
   height: 500px;
   overflow: hidden;
   position: relative;

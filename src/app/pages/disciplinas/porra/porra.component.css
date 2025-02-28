@@ -12,6 +12,7 @@
   flex: 1;
   background-image: url('../../../../../public/assets/olympusCheer.JPG');
   background-size: cover;
+  background-position: center;
 }
 
 .p-color-bg{

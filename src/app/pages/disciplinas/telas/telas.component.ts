@@ -9,5 +9,7 @@ import { Component } from "@angular/core";
   styleUrl:'./telas.component.css'
 })
 export class TelasComponent{
-  
+  title = 'Gimnasia Aerea';
+  description = '';
+  contexto = '';
 }

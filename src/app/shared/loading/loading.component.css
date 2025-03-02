@@ -1,0 +1,35 @@
+.loading-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(26, 48, 248);
+}
+
+.loading-image{
+  width: 100px;
+  height: 100px;
+  animation: spincircle ease infinite;
+}
+
+@keyframes spincircle{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text{
+  margin-top: 16px;
+  font-size: 1.2em;
+  color: white;
+}

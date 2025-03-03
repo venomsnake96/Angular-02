@@ -14,6 +14,9 @@
 
       <li (mouseenter)="openDropdown(0)" (mouseleave)="closeDropdown(0)">
         <a routerLink="/disciplinas/gimnasia" routerLinkActive="active">Gimnasia</a>
+        <button class="dropdown-toggle" [class.rotate]="isDropdownOpen[0]">
+          ▼
+        </button>
         <div class="dropdown" *ngIf="isDropdownOpen[0]">
           <p>Gimnasia Femenil</p>
           <p>Gimnasia Varonil</p>
@@ -22,6 +25,9 @@
 
       <li (mouseenter)="openDropdown(1)" (mouseleave)="closeDropdown(1)">
         <a routerLink="/disciplinas/porra" routerLinkActive="active">Porra</a>
+        <button class="dropdown-toggle" [class.rotate]="isDropdownOpen[1]">
+          ▼
+        </button>
       <div class="dropdown" *ngIf="isDropdownOpen[1]">
         <p>Mixto nivel 7</p>
         <p>Femenil nivel 7</p>
@@ -31,6 +37,9 @@
 
       <li (mouseenter)="openDropdown(2)" (mouseleave)="closeDropdown(2)">
         <a routerLink="/disciplinas/telas" routerLinkActive="active">Telas</a>
+        <button class="dropdown-toggle" [class.rotate]="isDropdownOpen[2]">
+          ▼
+        </button>
       <div class="dropdown" *ngIf="isDropdownOpen[2]">
         <p>Gimnasia Aerea</p>
       </div>
@@ -38,6 +47,9 @@
 
       <li (mouseenter)="openDropdown(3)" (mouseleave)="closeDropdown(3)">
         <a routerLink="/disciplinas/entrenamiento" routerLinkActive="active">Programas de <br>Entrenamiento</a>
+        <button class="dropdown-toggle" [class.rotate]="isDropdownOpen[3]">
+          ▼
+        </button>
         <div class="dropdown" *ngIf="isDropdownOpen[3]">
           <p>No competitivo</p>
           <p>Competitivo Local</p>

@@ -1,13 +1,14 @@
 import { Component } from "@angular/core";
 import { CardComponent } from "../../components/card/card.component";
 import { CommonModule } from "@angular/common";
+import { TimelineComponent } from "../../components/timeline/timeLine.component";
 
 
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, TimelineComponent],
   templateUrl:'./about.component.html',
   styleUrl: './about.component.css'
 })

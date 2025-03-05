@@ -1,0 +1,9 @@
+<div class="timeline">
+  <div class="timeline-item" *ngFor="let item of timelineItem; let i = index"
+  [ngClass]="{'left': i % 2 === 0, 'rigth' : i % 2 !== 0}">
+<div class="timeline-content">
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.description }}</p>
+</div>
+  </div>
+</div>

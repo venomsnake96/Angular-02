@@ -3,23 +3,41 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 0;
+  min-height: 100vh;
 }
 
-.tiimeline::after{
-  content: '';
-  position:  absolute;
+.timeline-line{
+  position: absolute;
   width: 6px;
   background-color: #1e90ff;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: trasnform 0.5s ease-out;
+  z-index: 1;
 }
 
 .timeline-item{
   padding: 10px 40px;
   position: relative;
   width: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.timeline-item:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+.timeline-item.expanded {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
 }
 
 .timeline-item.left{
@@ -65,12 +83,21 @@
 
 .timeline-content p{
   color: #333;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.timeline-item.expanded .timeline-content p{
+  max-height: 200px;
+  padding-top: 10px;
 }
 
 .timeline-content::before{
   content: '';
   position: absolute;
-  top:20px;
+  top: 20px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -78,7 +105,7 @@
 
 .timeline-item.left .timeline-content::before{
   right: -15px;
-  border-width: 10px 15px 10px 0;
+  border-width: 10px 0 10px 15px;
   border-color: transparent transparent transparent #00ff7f;
 }
 
@@ -86,6 +113,49 @@
   left: -15px;
   border-width: 10px 15px 10px 0;
   border-color: transparent #00ff7f transparent transparent;
+}
+
+@media screen and (max-width: 768px){
+  .timeline::after{
+    left: 20px;
+  }
+
+  .timeline-item{
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.rigth{
+    left: 0;
+  }
+
+  .timeline-item::after{
+    left: 10px;
+    right: auto;
+  }
+
+  .timeline-item.left .timeline-content::before,
+  .timeline-item.rigth .timeline-content::before{
+    left: -15px;
+    right: auto;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #00ff7f transparent transparent;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .timeline-item{
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+
+  .timeline-item::after{
+    left: 5px;
+    width: 15px;
+    height: 15px;
+  }
 }
 
 

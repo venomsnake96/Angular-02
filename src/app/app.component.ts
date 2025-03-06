@@ -5,10 +5,11 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadCrumb.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { CommonModule } from '@angular/common';
+import { FloatingButtonComponent } from './components/floatingbutton/floatingButton.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ NavbarComponent, BreadcrumbComponent, FooterComponent , RouterOutlet, CommonModule ,LoadingComponent],
+  imports: [ NavbarComponent, BreadcrumbComponent, FooterComponent , RouterOutlet, CommonModule ,LoadingComponent, FloatingButtonComponent],
   standalone: true,
   templateUrl:'./app.component.html',
   styleUrl: './app.component.css'

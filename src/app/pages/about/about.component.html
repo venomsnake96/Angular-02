@@ -1,14 +1,14 @@
-<div class="about">
+<section class="about">
 <div class="about-top">
   <div class="about-top-title">
     <h1 [class.griego]="!isSpanish">{{tileText}}</h1>
     <img src="../../..//public/assets/hornamenta.png" alt="hornamenta">
   </div>
 </div>
-<div class="card-box">
+<section class="card-box">
   <app-card title="FILOSOFIA" [description]="filosofiaDescription" [image]="filosofiaImage" />
   <app-card title="MISIÓN" [description]="misionDescription" [image]="misionImage" />
   <app-card title="VISIÓN" [description]="visionDescription" [image]="visionImage" />
-</div>
+</section>
 <app-timeline />
-</div>
+</section>

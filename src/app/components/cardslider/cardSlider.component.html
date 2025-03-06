@@ -1,0 +1,17 @@
+<section class="slider-container">
+  <div *ngFor="let item of items; let i = index"
+  class="slider-images"
+  [class.active]="i === activeIndex"
+  (click)="setActive(i)">
+    <div class="slider-img">
+      <img [src]="item.image" [alt]="item.title">
+      <h1>{{item.title}}</h1>
+      <div class="details">
+        <h2>
+          {{item.title}}
+        </h2>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>

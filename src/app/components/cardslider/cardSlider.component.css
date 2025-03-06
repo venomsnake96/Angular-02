@@ -1,0 +1,133 @@
+.slider-container{
+  width: 100%;
+  height: 100vh;
+ background: linear-gradient(180deg, rgba(77,34,227,0.9921218487394958) 0%, rgba(254,254,254,1) 96%);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.slider-images{
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.slider-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.slider-img{
+  width: 110px;
+  height: 480px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
+  flex-shrink: 0;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+}
+
+.details h2{
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7 ease;
+  display: none;
+}
+
+.details p{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+
+.slider-img.active{
+width: 766px !important;
+height: 750px !important;
+}
+
+.slider-img.active h1{
+  display: none;
+}
+
+.slider-img.active .details p,
+.slider-img.active .details h2{
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .slider-container{
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .slider-images{
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: hidden;
+  }
+
+  .slider-img{
+    width: 90%;
+    height: 200px;
+  }
+
+  .slider-img.active{
+    width: 90% !important;
+    height: 300px;
+  }
+
+  h1{
+    font-size: 24px;
+    left: -5%;
+  }
+
+  .details{
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .details h2{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .details p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+

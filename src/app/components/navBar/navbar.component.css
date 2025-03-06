@@ -158,7 +158,7 @@
     background-size: cover;
     border: none;
     font-size: 2px;
-    transition: rotate .3s ease-in-out;
+    transition: rotate .3s ease;
   }
 
   .toggle-nav-links-two:hover{

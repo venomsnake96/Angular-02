@@ -1,0 +1,9 @@
+<div class="card-info" [ngClass]="{'hovered': isHovered}">
+  <div class="card-image" (mouseenter)="onHover(true)" (mauseleave)="onHover(false)">
+    <img [src]="isHovered ? item.hoverImage : item.icon" [alt]="item.title">
+  </div>
+  <div class="card-content">
+    <h2>{{item.title}}</h2>
+    <p>{{item.description}}</p>
+  </div>
+</div>

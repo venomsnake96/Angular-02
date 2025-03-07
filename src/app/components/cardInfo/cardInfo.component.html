@@ -1,5 +1,5 @@
 <div class="card-info" [ngClass]="{'hovered': isHovered}">
-  <div class="card-image" (mouseenter)="onHover(true)" (mauseleave)="onHover(false)">
+  <div class="card-image" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">
     <img [src]="isHovered ? item.hoverImage : item.icon" [alt]="item.title">
   </div>
   <div class="card-content">

@@ -9,4 +9,7 @@
     </div>
     <div class="tr-img-bg"></div>
   </div>
+  <div class="card-container">
+    <app-infocard *ngFor="let card of cards" [item]="card" />
+  </div>
 </section>

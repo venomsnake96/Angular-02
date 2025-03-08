@@ -24,7 +24,10 @@
 }
 
 .service-content{
-background: linear-gradient(63deg, rgba(45,43,95,1) 30%, rgba(17,15,67,1) 30%, rgba(31,52,134,1) 67%, rgba(162,182,16,1) 96%);
+background-image: linear-gradient(to bottom,#0000,#3333334d 0%,#000), url('../../../../../public/assets/gimnasio.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 display: flex;
 flex-direction: column;
 gap: 2rem;

@@ -16,9 +16,9 @@ export class GymnasticsComponent {
 
   cards = [
     {
-      title: 'Gimnasia Ritmica',
-      description: 'En esta modalidad, las gimnastas realizan rutinas con música en un piso de 13 x 13 metros, donde el aparato debe estar en constante movimiento y se incluyen elementos de gran amplitud con y sin giros, saltos, lanzamientos y captura de implementos. La gimnasia rítmica requiere un alto nivel de fuerza física, flexibilidad, coordinación y expresividad corporal.',
-      icon: '../../../..//public/assets/boombox.svg',
+      title: 'Gimnasia Aerobica',
+      description: 'En la gimnasia aeróbica, el deportista debe ejecutar una rutina con movimientos intensos y empleando distintos elementos de dificultad. En su accionar tiene que evidenciar fuerza, flexibilidad y fluidez.',
+      icon: '../../../..//public/assets/gymnast.svg',
       hoverImage: '../../../..//public/assets/gimnasiaBn.jpg'
     },
     {

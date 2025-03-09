@@ -23,7 +23,7 @@ export class CarouselComponent{
     {
       image: '../..//public/assets/olympusjump.JPG',
       title: 'DISCIPLINA EN EL DEPORTE',
-      description: 'Debido a su naturaleza estructurada y reglamentada que promueve valores como la disciplina, la perseverancia y la colaboracion. En el ambito deportivo, la disciplina se refiere al nivel de compromiso, respeto y evolución que presenta un atleta en sunrespectivo deporte.'
+      description: 'Debido a su naturaleza estructurada y reglamentada que promueve valores como la disciplina, la perseverancia y la colaboracion. En el ambito deportivo, la disciplina se refiere al nivel de compromiso, respeto y evolución que presenta un atleta en su respectivo deporte.'
     },
     {
       image: '../..//public/assets/BROWN.jpg',

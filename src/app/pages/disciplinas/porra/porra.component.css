@@ -52,6 +52,19 @@
   font-size: 15px;
 }
 
+.card-container{
+  background-image: linear-gradient(to bottom,#0000,#3333334d 10%,#000), url('../../../../../public/assets/olympus.JPG');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 
 
 @media (min-width:768px){
@@ -75,6 +88,10 @@
 
   .porra-content p{
     font-size: 15px;
+  }
+
+  .card-container{
+    flex-direction: row;
   }
 
 

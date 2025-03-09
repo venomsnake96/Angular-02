@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  <div class="mixto-7">
-  <h2>Mixto 7</h2>
-    <p>El nivel de dificultad mas alto. Los standares de ejecucion, comlejidad y limpieza en la rutina llevan las capacidades del deportista al limite</p>
+  <div class="card-container">
+    <app-infocard *ngFor="let card of cards" [item]="card" />
+  </div>
 </div>

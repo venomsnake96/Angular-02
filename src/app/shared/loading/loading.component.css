@@ -10,7 +10,7 @@
 .loading-image{
   width: 100px;
   height: 100px;
-  animation: spincircle 2s ease infinite;
+  animation: spincircle 5s linear infinite;
 }
 
 @keyframes spincircle{

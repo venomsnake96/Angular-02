@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-image: linear-gradient(to bottom,#0000 ,#3333334d 0%,#000 70%), url('../../../../public/assets/olimpo.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   }
 
   .top-menu-logo{
@@ -129,10 +133,11 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
+    font-weight: 700;
   }
 
   .nav-links-one a:hover{
-    color: rgb(16, 99, 243);
+    color: rgb(0, 221, 255);
   }
 
   .top-menu-base{
@@ -148,12 +153,12 @@
   }
 
   .nav-links-one a.active{
-    color: blue;
+    color: rgb(0, 221, 255);
   }
 
   .toggle-nav-links-two{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background:url('../../../../public/assets/flecha.png');
     background-size: cover;
     border: none;
@@ -193,7 +198,7 @@
   @media (max-width: 768px) {
 
     .top-menu-base{
-      height: 50px;
+      height: 70px;
     }
 
     .navbar-toggle {

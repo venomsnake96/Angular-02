@@ -78,4 +78,8 @@
   .gimnasia-content p{
     font-size: 15px;
   }
+
+  .card-container{
+    flex-direction: row;
+  }
 }

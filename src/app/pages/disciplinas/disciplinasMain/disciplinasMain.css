@@ -1,9 +1,10 @@
 .service{
-  background-image: linear-gradient(to top,#0000,#3333334d 10%,#000), url('../../../../../public/assets/gimnasio.jpg');
+background-image: linear-gradient(to top,#0000,#3333334d 10%,#000), url('../../../../../public/assets/gimnasio.jpg');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
 .service-top{
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@ flex-direction: column;
 gap: 2rem;
 justify-content: center;
 align-items: center;
-padding: 15px 100px 40px;
+padding: 15px 0 40px 0;
 }
 
 .service-content p{
@@ -158,6 +159,10 @@ max-width: 300px;
   position: relative;
 }
 
+.service-content p{
+  font-size: 13px;
+}
+
 }
 
 @media (min-width:600px){
@@ -196,6 +201,10 @@ max-width: 300px;
       font-weight: 200;
       line-height: 12px;
       margin-left: 10px;
+    }
+
+    .service-content p{
+      font-size: 15px;
     }
 }
 

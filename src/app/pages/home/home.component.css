@@ -1,6 +1,6 @@
 .home{
   max-width: 100%;
-  padding: 10px 100px;
+  padding: 10px ;
   background-image: linear-gradient(to top,#0000,#3333334d 10%,#000 90%), url('../../../../public/assets/pista.jpg')
 }
 
